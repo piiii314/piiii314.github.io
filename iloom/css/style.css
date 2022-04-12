@@ -100,7 +100,7 @@ header nav li ul {
     border: 1px solid #191919;
     z-index: 100;
 }
-header nav li li a {
+header nav li a {
     font-family: 'Noto Sans KR', sans-serif;
     display: block;
     line-height: 38px;
