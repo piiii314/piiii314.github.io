@@ -1,14 +1,28 @@
-$('.port_slider').slick({
+$('.publishing .slider').slick({
   dots: true, // 하단 paging버튼 노출 여부
   infinite: true, // 양방향 무한 모션
   speed: 150,
   fade: true, 
   cssEase: 'linear', //css easing 모션 함수
-  prevArrow: $('.prev'),
-  nextArrow: $('.next'),
+  prevArrow: $('.publishing_prev'),
+  nextArrow: $('.publishing_next'),
   arrows: true,
   draggable : false,
 });
+
+$('.design .slider').slick({
+  dots: false, // 하단 paging버튼 노출 여부
+  infinite: true, // 양방향 무한 모션
+  speed: 150,
+  cssEase: 'linear', //css easing 모션 함수
+  prevArrow: $('.design_prev'),
+  nextArrow: $('.design_next'),
+  arrows: true,
+  draggable: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});
+
 
 var div2 = document.getElementsByClassName("div2");
 function handleClick(event) {

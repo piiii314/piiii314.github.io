@@ -7,8 +7,8 @@
     <title>서원주</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script/script.js" defer ></script>
+    <script src="js/script.js" defer ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- 페이드 슬라이드 -->
     <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick.css" />
     <script type="text/javascript" src="http://kenwheeler.github.io/slick/slick/slick.min.js"></script>
@@ -17,12 +17,26 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 갤러리 -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- 구글 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+        .fancybox-slide--iframe .fancybox-content {
+            width: 800px;
+            height: 600px;
+            max-width: 80%;
+            max-height: 80%;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <aside>
         <div class="info">
             <ul class="profile">
-                <li><img src="images/profile.png" alt="프로필 이미지"></li>
+                <li><img src="images/profile.png" alt=""></li>
                 <li>서 원주<br><span>1997 . 06 . 16</span></li>
                 <li><a href="#about" class="div2">About</a></li>
                 <li><a href="#portfolio" class="div2">Portfolio</a></li>
@@ -42,17 +56,20 @@
             <article class="education" data-aos="fade-down">
                 <h2>Education</h2>
                 <ul>
+                    <li>패스트캠퍼스 한 번에 끝내는 프론트엔드 개발 초격차 패키지</li>
                     <li>그린컴퓨터아카데미 반응형 웹디자인(UX/UI) & 웹퍼블리셔 디지털 실무 양성과정 수료</li>
                 </ul>
             </article>
             <article class="license" data-aos="fade-down">
                 <h2>License</h2>
                 <ul>
-                    <li>그래픽스 운용 기능사</li>
+                    <li>컴퓨터활용능력 2급</li>
                     <li>웹디자인 기능사</li>
+                    <li>그래픽스 운용 기능사</li>
                 </ul>
             </article>
         </section>
+
 
         <article class="skill" data-aos="fade-up">
             <h2>Skill</h2>
@@ -92,96 +109,128 @@
                         </div>
                     </div>
                 </li>
+                <li>
+                    <div class="circle">
+                        <div class="outcircle">
+                            <div class="incircle">Excel</div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </article>
         
-        <article class="portfolio" id="portfolio">
+        <article class="publishing" id="portfolio">
             <div class="con_box">
-                    <h2>PORTFOLIO</h2>
-                <div class="port_slider">
+                    <h2>PUBLISHING</h2>
+                <div class="slider">
                     <div>
                         <div class="txt">
                             <h3><span># 01</span>제주맥주</h3>
                             <ul>
-                                <li><em>Project</em>웹사이트 리뉴얼</li>
-                                <li><em>Date</em>2021. 09. 04 ~ 2021. 09. 07</li>
+                                <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
+                                <li><em>제작기간</em>3days</li>
                             </ul>
                             <p>기존 사이트를 보완해 브랜드가 운영하는 체험 프로그램을
                                 더 효과적으로 소개하고, 브랜드 컬러의 시원한 느낌을
                                 살려 디자인 한 풀페이지 디자인입니다.</p>
                         </div>
                         <div class="img">
-                            <a href="jejubeer/index.html" target="blank" class="img_1"></a>
+                            <a href="jejubeer/index.html" target="blank"><img src="images/view_1.jpg" alt="제주맥주 리뉴얼 사이트 바로가기"></a>
                         </div>
                     </div>
                     <div>
                         <div class="txt">
                             <h3><span># 02</span>고려대학교</h3>
                             <ul>
-                                <li><em>Project</em>웹사이트 리뉴얼</li>
-                                <li><em>Date</em>2021. 10. 14 ~ 2021. 10. 22</li>
+                                <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
+                                <li><em>제작기간</em>6days</li>
                             </ul>
                             <p>기존사이트의 정보를 유지하고 트렌드에 맞춰 새롭게 리뉴얼 디자인 한 랜딩페이지 입니다.</p>
                         </div>
                         <div class="img">
-                            <a href="korea_university/index.html" target="blank" class="img_2"></a>
+                            <a href="korea_university/index.html" target="blank"><img src="images/view_2.jpg" alt="고려대학교 리뉴얼 사이트 바로가기"></a>
                         </div>
                     </div>
                     <div>
                         <div class="txt">
                             <h3><span># 03</span>일룸</h3>
                             <ul>
-                                <li><em>Project</em>웹사이트 리뉴얼</li>
-                                <li><em>Date</em>2021. 10. 27 ~ 2021. 11. 01</li>
+                                <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
+                                <li><em>제작기간</em>4days</li>
                             </ul>
                             <p>기존사이트의 정보를 유지하고 트렌드에 맞춰 새롭게 리뉴얼 디자인 한 랜딩페이지 입니다.</p>
                         </div>
                         <div class="img">
-                            <a href="iloom/index.html" target="blank" class="img_3"></a>
+                            <a href="iloom/index.html" target="blank"><img src="images/view_3.jpg" alt="일룸 리뉴얼 사이트 바로가기"></a>
                         </div>
                     </div>
                     <div>
                         <div class="txt">
-                            <h3><span># 04</span>반스</h3>
+                            <h3><span># 04</span>투쿨포스쿨</h3>
                             <ul>
-                                <li><em>Project</em>웹사이트 리뉴얼</li>
-                                <li><em>Date</em>2021. 10. 14 ~ 2021. 10. 16</li>
+                                <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
+                                <li><em>제작기간</em>3days</li>
+                            </ul>
+                            <p>기존사이트의 정보를 유지하고 트렌드에 맞춰 새롭게 리뉴얼 디자인 한 랜딩페이지 입니다.</p>
+                        </div>
+                        <div class="img">
+                            <a href="too_cool_for_school/index.html" target="blank"><img src="images/view_4.jpg" alt="투쿨포스쿨 리뉴얼 사이트 바로가기"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="txt">
+                            <h3><span># 05</span>반스</h3>
+                            <ul>
+                                <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
+                                <li><em>제작기간</em>2days</li>
                             </ul>
                             <p>주 색감인 모노톤을 중심으로 타이포와 라인을 이용해 반스의 캐주얼하고 스트릿한 브랜드 개성을 직관적으로 느낄 수 있도록 디자인 한 랜딩페이지 입니다.</p>
                         </div>
                         <div class="img">
-                            <a href="vans/index.html" target="blank" class="img_4"></a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="txt">
-                            <h3><span># 05</span>투쿨포스쿨</h3>
-                            <ul>
-                                <li><em>Project</em>웹사이트 리뉴얼</li>
-                                <li><em>Date</em>2021. 09. 23 ~ 2021. 09. 25</li>
-                            </ul>
-                            <p>기존사이트의 정보를 유지하고 트렌드에 맞춰 새롭게 리뉴얼 디자인 한 랜딩페이지 입니다.</p>
-                        </div>
-                        <div class="img">
-                            <a href="too_cool_for_school/index.html" target="blank" class="img_5"></a>
+                            <a href="vans/index.html" target="blank"><img src="images/view_5.jpg" alt="반스 리뉴얼 사이트 바로가기"></a>
                         </div>
                     </div>
                 </div>
                 <div id="pager">
-                    <a class="prev">PREV</a>
-                    <a class="next">NEXT</a>
+                    <a class="publishing_prev">PREV</a>
+                    <a class="publishing_next">NEXT</a>
                 </div>
+            </div>
+        </article>
+
+        <article class="design">
+            <h2>DESIGN</h2>
+            <div class="slider">
+                <div>
+                    <a href="images/헉슬리 할인.jpg" data-fancybox="gallery" data-caption="헉슬리 할인.jpg"><img src="images/헉슬리 할인.jpg" alt="헉슬리 할인"></a>
+                </div>
+                <div>
+                    <a href="images/추석 프로모션.jpg" data-fancybox="gallery" data-caption="추석 프로모션"><img src="images/추석 프로모션.jpg" alt="추석 프로모션"></a>
+                </div>
+                <div>
+                    <a href="images/크리스마스 팝업.jpg" data-fancybox="gallery" data-caption="크리스마스 팝업"><img src="images/크리스마스 팝업.jpg" alt="크리스마스 팝업"></a>
+                </div>
+                <div>
+                    <a href="images/인트로.jpg" data-fancybox="gallery" data-caption="인트로"><img src="images/인트로.jpg" alt="인트로"></a>
+                </div>
+                <div>
+                    <a href="images/유니클로 모바일.jpg" data-fancybox="gallery" data-caption="유니클로 모바일 디자인"><img src="images/유니클로 모바일.jpg" alt="유니클로 모바일 디자인"></a>
+                </div>
+            </div>
+            <div id="pager">
+                <a class="design_prev"><span class="material-icons">arrow_back</span></a>
+                <a class="design_next"><span class="material-icons">arrow_forward</span></a>
             </div>
         </article>
 
         <article class="contact" id="contact">
             <h2 data-aos="flip-left">THANK YOU !</h2>
             <ul>
-                <li><a href="mailto:seowonj314@gmail.com"><img src="images/sns-m.png" alt="이메일"></a></li>
-                <li><a href="#"><img src="images/sns-g.png" alt="깃허브"></a></li>
+                <li><a href="mailto:seowonj314@gmail.com"><img src="images/sns-m.png" alt="seowonj314@gmail.com"></a></li>
+                <li><a href="#"><img src="images/sns-g.png" alt="깃허브 바로가기"></a></li>
             </ul>
             <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. <br>
-                © SeoWonju portfolio 2021</p>
+                &copy; SeoWonju portfolio <span class="this-year"></span></p>
         </article>
     </main>
 </body>
