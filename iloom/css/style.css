@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a, a:visited {text-decoration: none; color: #191919;}
+.inner {width: 1280px; margin: 0 auto;}
+#wrap {min-width: 1440px;}
+
+header .gnb { position: relative; margin: 0 auto; width: 1440px; height: 95px; text-align: center;}
+header .logo { position: absolute; top: 0; left: 0; padding: 25px 0; }
+header .menu { position: absolute; right: 0; top: 0; }
+header .menu ul { display: flex; justify-content: space-between; align-items: center; width: 150px; height: 95px; }
+header nav { display: flex; align-items: center; justify-content: center; height: 95px; }
+header nav > ul > li { display: inline-block; position: relative; }
+header nav > ul > li > a { display: block; padding: 0 32px; line-height: 40px; font-family: 'Noto Sans KR', sans-serif;font-size: 17px; font-weight: 500;  letter-spacing: -1px; color: #111111; }
+header nav > ul > li > .dot::before { content: ""; display: block; position: absolute; left: 50%;  transform: translateX(-50%); top: 3px; width: 2px; height: 2px; border-radius: 50%; background-color: #111111; }
+header nav li ul { display: none; position: absolute; width: 100%; border: 1px solid #191919; z-index: 100; }
+header nav li a { display: block; transition: all .3s; background-color: #fff; font-family: 'Noto Sans KR', sans-serif; line-height: 38px; text-align: center; font-weight: 400; font-size: 15px; color: #666; letter-spacing: -1px; }
+header nav li:hover ul { display: block; }
+header nav li li a:hover { background-color: #f4f4f4; }
+
+/* 메인 비주얼 영역 */
+/* 슬라이드 */
+.main_visual .bx-wrapper { margin: 0 auto; margin-bottom: 50px; width: 1780px; }
+
+/* 퀵 메뉴 */
+.quick_menu {margin-bottom: 92px;}
+.quick_menu ul { display: flex; justify-content: space-between; margin: 0 auto; width: 600px; text-align: center; }
+.quick_menu ul li a p { padding-top: 13px; font-family: 'S-CoreDream-4Regular'; font-size: 14px; letter-spacing: -1px; color: #666666; }
+
+/* 추천제품 영역 */
+.product {margin-bottom: 140px; text-align: center; }
+.product_inner { position: relative; margin: 0 auto; width: 1440px; }
+.product h1 a { display: inline-block; margin-bottom: 54px; font-family: 'S-CoreDream-5Medium'; font-size: 28px; }
+.product .bx-wrapper { overflow: hidden; padding: 0 75px; margin: 0 auto; width: 1140px; text-align: left; }
+.product ul li dl { padding-top: 12px; letter-spacing: -1px; line-height: 25px; color: #111111; }
+.product ul li dl dt { font-family: 'S-CoreDream-4Regular'; font-size: 14px; }
+.product ul li dl dd { font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 18px; color: #c80a1e; }
+.product ul li dl dd span { font-size: 14px;  font-family: 'S-CoreDream-4Regular'; }
+.product .bx-viewport { overflow: visible !important; }
+.product a.bx-prev{ position: absolute; left: 15px; top: 108px; width: 44px; height: 44px; border-radius: 50%;background: url(../images/prev.png) no-repeat; box-shadow: 5px 4px 16px 0 rgba(1, 1, 1, 13%); }
+.product a.bx-next{ position: absolute; width: 44px; height: 44px; right: 15px; top: 108px; border-radius: 50%; background: url(../images/next.png) no-repeat; box-shadow: 5px 4px 16px 0 rgba(1, 1, 1, 13%); }
+
+/* 서비스 영역 */
+.service { margin: 0 auto; margin-bottom: 50px; width: 1142px; height: 1024px; }
+.service ul li { float: left; margin-bottom: 60px; }
+.service ul li a { float: left; line-height: 28px; }
+.service ul li a:first-child { margin-right: 60px; }
+.service ul li a strong { display: block; padding-top: 5px; font-size: 22px; font-family: 'S-CoreDream-6Bold'; }
+.service ul li a p { font-family: 'S-CoreDream-3Light'; font-size: 15px; letter-spacing: -1px; }
+
+/* 리뷰 영역 */
+.review { overflow: hidden; margin-bottom: 85px; height: 970px; }
+.review h1 { padding-bottom: 65px; }
+.review > ul > li > ul { float: left; margin-right: 40px; } 
+.review > ul > li > ul:last-child { margin-right: 0; }
+.review > ul > li > ul > li { margin-bottom: 40px; }
+
+/* 인스타그램 영역 */
+.instagram { overflow: hidden; margin-bottom: 140px; width: 100%; text-align: center; font-family: 'S-CoreDream-6Bold'; }
+.instagram h1 { padding-bottom: 18px; font-size: 32px; color: #191919; }
+.instagram p { padding-bottom: 50px; font-family: 'S-CoreDream-3Light'; font-size: 15px; color: #c80a1e; }
+.instagram .bx-wrapper { overflow: hidden; padding: 0 9%; margin: 0 auto; max-width: 1590px !important; text-align: left; }
+.instagram .bx-viewport{ overflow: visible !important; } 
+ul.sns_slider li  { width: 360px;  margin: 13px; }
+
+/* 공지 영역 */
+.etc-info { display: flex; justify-content: space-between; margin-bottom: 80px; }
+.etc-info h2 { display: inline-block; margin: 0 282px 13px 0; width: 75px; font-family: 'S-CoreDream-5Medium'; font-size: 20px; color: #c80a1e; letter-spacing: -1px; }
+.etc-info > div > a { font-family: 'S-CoreDream-4Regular'; font-size: 13px; color: #666666; }
+.etc-info > div > a span { margin-left: 16px; }
+.etc-info ul:first-of-type { padding-top: 10px; border-top: 1px solid #eeeeee; }
+.etc-info ul li { line-height: 1.7; font-family: 'S-CoreDream-3Light'; }
+.etc-info ul:first-of-type li a { overflow:hidden; display: inline-block; width: 321px; font-size: 15px; color: #666666; letter-spacing: -1px; white-space:nowrap; text-overflow: ellipsis; }
+.etc-info ul li span { float: right; color: #999999; font-size: 14px; letter-spacing: 0; }
+.etc-info .notice ul:last-child { display: flex; justify-content: space-between; margin: 18px auto; width: 230px; }
+.etc-info .cscenter { letter-spacing: -1px; }
+.etc-info .cscenter h3 { font-family: 'S-CoreDream-5Medium'; font-size: 46px; line-height: 1.3; color: #191919; }
+.etc-info .cscenter h3 span { display: block; font-family: 'S-CoreDream-3Light'; font-size: 18px; }
+.etc-info .cscenter p { padding: 5px 0 15px; border-bottom: 1px solid #eeeeee; font-family: 'S-CoreDream-3Light'; font-size: 15px; line-height: 1.7; color: #666666; }
+.etc-info .cscenter p span { display: inline-block; width: 62px; }
+.etc-info .cscenter strong { display: flex; justify-content: space-between; margin-top: 22px; width: 325px; }
+.etc-info .cscenter strong a { display: inline-block; padding: 18px 0; width: 155px; border-radius: 8px; background-color: #191919; text-align: center; font-family: 'S-CoreDream-4Regular'; font-size: 14px; color: white; }
+
+/* 푸터 */
+footer { background-color: #efeff1; }
+.footer_inner { display: flex; justify-content: space-between; align-items: center; margin: 0 auto; width: 1142px; height: 250px; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px; color: #b5b5b5; }
+.footer_inner > p { font-size: 14px; line-height: 26px; }
+.footer_inner > p span { display: block; padding-top: 20px; letter-spacing: 0; }
+.footer_inner div > ul:first-child { display: flex; justify-content: space-between; width: 494px; }
+.footer_inner div > ul:first-child > li { display: flex; }
+.footer_inner div > ul:first-child > li p { display: inline-block; padding-right: 20px; font-weight: 500; font-size: 14px; }
+.footer_inner div > ul:first-child > li > ul a { font-size: 14px; line-height: 22px; color: #b5b5b5; }
+.footer_inner div > ul:last-child { float: right; display: flex; justify-content: space-between; padding-top: 40px; width: 296px;}

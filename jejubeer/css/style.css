@@ -1,0 +1,104 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TmonMonsori';
+    src : url("../fonts/TmonMonsori.ttf.ttf"); 
+}
+@font-face {
+    font-family: 'interparkgothicmedium';
+    src : url(../fonts/interparkgothicmedium.ttf); 
+}
+@font-face {
+    font-family: 'interparkgothiclight';
+    src : url("../fonts/interparkgothiclight.ttf"); 
+}
+
+body { min-width: 1920px; }
+.inner { width: 1420px; margin: 0 auto; }
+a, a:visited {text-decoration: none; color: black; }
+h1 { font-family: 'TmonMonsori'; font-size: 62px; }
+
+/* 네비게이션 */
+nav { position: fixed; background-color: white; width: 100%; height: 100px; z-index: 10; }
+nav .logo a {display: flex; height: 100px; align-items: center;}
+nav .gnb_wrap { position: relative; display: flex; justify-content: space-between; align-items: center; width: 1420px; margin: 0 auto; }
+nav ul.gnb { font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 16px; width: 734px; height: 100px; display: flex; justify-content: space-between; align-items: center; }
+nav ul.gnb li { float: left; }
+nav ul.gnb li a { display: block; }
+/* 네비게이션 끝 */
+
+/* 메인 */
+.bx-wrapper { position: relative;height: 945px; }
+.bx-controls-direction { position: absolute; }
+
+.slide1 { background: url(../images/main_slide1.jpg); height: 1080px; color: white; }
+.slide2 { background: url(../images/main_slide2.jpg); height: 1080px; color: white; }
+.main_slider h1 { font-size: 88px; margin-top: 160px; font-family: 'BMDOHYEON'; line-height: 1.25; letter-spacing: 10px; }
+.main_slider p { float: right; text-align: right; margin-top: 280px; font-family: 'interparkgothiclight'; font-size: 22px; line-height: 1.63; }
+.main_slider p strong { font-size: 54px; font-family: 'TmonMonsori'; display: block; margin-bottom: 25px; }
+
+/* 유튜브 */
+.vid {background:url(../images/vid_bg.jpg);}
+.vid_con { text-align: center;}
+.vid_con p {font-size: 32px; color: white; font-family: 'interparkgothiclight'; margin: 90px 0 30px;}
+
+/* 캠핑카 */
+.camper  { background: url(../images/camper_bg.png)no-repeat; height: 1080px; background-color: #f7f7f7; font-family: 'interparkgothiclight'; }
+.camper h1 { color: #1ecad3; margin: 65px 0 20px; }
+.camper h1 + p { font-size: 18px; color: #1ecad3; line-height: 1.6; display: inline-block; }
+.camper ul.camper_con { float: right; text-align: center; margin: 50px 60px 0 0; }
+.camper ul.camper_con li { float: left; margin-right: 50px; }
+.camper ul.camper_con li a { display: inline-block; width: 316px; height: 513px; border-radius: 13px; color: #8e8e8e; transition: all .5s; }
+.camper ul.camper_con li:nth-of-type(1) a { background: url(../images/camper_1.jpg)no-repeat; background-color: white; background-size: 316px; }
+.camper ul.camper_con li:nth-of-type(2) a { background: url(../images/camper_2.jpg)no-repeat; background-color: white; background-size: 316px; }
+.camper ul.camper_con li:nth-of-type(3) a { background: url(../images/camper_3.jpg)no-repeat; background-color: white; background-size: 316px; }
+.camper ul.camper_con p { margin: 340px 0 10px; line-height: 1.7; font-size: 13px; color: #8e8e8e; }
+.camper ul.camper_con span { display: inline-block; padding: 13px 28px; border: 1px solid #c7c7c7; border-radius: 50px; font-size: 17px; }
+.camper ul.camper_con li:hover a { transform: scale( 1.05); background-color: #9966ff; color: white; box-shadow: 6px 6px 27px rgba(0, 0, 0, 20%); }
+.camper ul.camper_con li:hover a p { color: white; }
+.camper ul.camper_con li:hover a span { border: 1px solid white; border-radius: 23px; }
+
+/* 숍 */
+.shop h1 { margin: 30px 0 46px; color: #ff803c; }
+.shop .shop_scroll { overflow-x: scroll; width: 1670px; float: right; }
+.shop .shop_scroll ul.shop_con { display: flex; justify-content: space-between; width: 2460px; height: 570px; }
+.shop .shop_scroll ul.shop_con li img { width: 450px; }
+.shop .shop_scroll ul.shop_con li h3 { font-family: 'interparkgothiclight'; font-size: 18px; margin-top: 20px; }
+.shop .shop_scroll ul.shop_con li span { display: block; font-size: 22px; font-weight: bold; line-height: 2; }
+
+.shop .shop_scroll::-webkit-scrollbar {height: 6px;}
+.shop .shop_scroll::-webkit-scrollbar-thumb {background-color: rgb(0, 0, 0);  border-radius: 4px;}
+
+/* 체험 */
+.brewery { background: url(../images/brewery_bg.jpg)no-repeat; text-align: center; background-color: #f7f7f7; font-family: 'NanumSquare'; }
+.brewery h1 { color: white;  text-shadow: 6px 6px 20px rgba(0, 0, 0, 40%); }
+.brewery h1 span { font-size: 20px;  display: block;  margin-bottom: 20px;  font-family: 'NanumSquare';  font-weight: 900; }
+.brewery h1 + p { margin: 32px 0 40px; font-size: 17px; color: white; line-height: 1.3; text-shadow: 6px 6px 20px rgb(0, 0, 0); }
+.brewery h1 + p em { display: block; margin-top: 10px; }
+.brewery ul.brewery_con { margin: 0 auto; width: 1166px; height: 348px; background-color: white; border-radius: 25px; overflow: hidden;}
+.brewery ul.brewery_con li { position: relative; float: left; width: 33.333%; height: 348px; }
+.brewery ul.brewery_con li:first-child{ background: url(../images/brewery_1.jpg); cursor: pointer; }
+.brewery ul.brewery_con li:last-child { background: url(../images/brewery_2.jpg); cursor: pointer; }
+.brewery ul.brewery_con li:nth-child(odd)::after { content: ""; opacity: 0; transition: all .3s; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(30, 202, 211, .5); }
+.brewery ul.brewery_con li:nth-child(odd):hover::after { opacity: 1; }
+
+.brewery ul.brewery_con p { font-size: 18px; font-weight: bold; position: absolute; color: white; z-index: 10; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+.brewery ul.brewery_con li span { line-height: 1.4; }
+.brewery ul.brewery_con li em { display: block; padding: 12px 46px; border: 1px solid white; border-radius: 23px; margin-top: 15px; font-size: 22px; }
+.brewery ul.brewery_con li:nth-child(2) span { color: #1ecad3; font-size: 24px; font-weight: 900; }
+.brewery ul.brewery_con li:nth-child(2) em { font-size: 16px; font-weight: 400; color: #3c3c3c; padding: 0; margin: 0; width: 300px; display: inline-block; line-height: 1.6; margin-top: 5px; }
+
+/* 푸터 */
+.footer_wrap { background-color: #f7f7f7; }
+.footer { height: 246px; color: #a5a5a5; font-family: 'NanumSquare'; font-weight: 400; }
+.footer .inner { border-top: 1px solid #dfdfdf; }
+.footer p { display: inline-block; float: left; margin-top: 45px; line-height: 1.6; font-size: 14px; }
+.footer p em { font-weight: bold; }
+.footer ul { display: inline-block; float: right; margin-top: 90px; }
+.footer ul li { float: left; margin-left: 35px; }

@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-4Regular';            
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-5Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+a {color: inherit;}
+a,a:visited {text-decoration: none; color: #e1e1e1;}
+
+/* 프로필 시작 */
+aside { display: flex; justify-content: center; align-items: center; position: fixed; width: 22%; height: 100vh; background-color: #0f0f0f; text-align: center; font-family: 'S-CoreDream-5Medium'; font-size: 24px; color: #e1e1e1; }
+aside .info { width: 100%; padding: 25px 0 25px; }
+aside .info ul.profile { margin: 0 auto; margin-bottom: 15%; width: 70%; }
+aside .info ul.profile li span { font-family: 'S-CoreDream-4Regular'; font-size: 18px; }
+aside .info ul.profile li:first-child { margin-bottom: 32px; }
+aside .info ul.profile li:first-child img { max-width: 100%; }
+aside .info ul.profile li:nth-child(2) { padding-bottom: 15%; line-height: 34px; }
+
+aside .info ul.contact_info::before { content: ""; display: block; height: 1px; background: url(../images/dashed.png); background-size: cover; }
+aside .info ul.contact_info { margin: 0 auto; width: 75%; font-size: 16px; text-align: left; }
+aside .info ul.contact_info li { position: relative; }
+aside .info ul.contact_info li strong { display: block; padding: 10% 0 10%; font-family: 'S-CoreDream-6Bold'; font-size: 28px; }
+aside .info ul.contact_info li a { display: inline-block; margin-bottom: 12px; font-family: 'S-CoreDream-4Regular'; }
+aside .info ul.contact_info li:last-child{ padding-left: 15%; }
+aside .info ul.contact_info li:last-child::before { content: ""; position: absolute; left: 0; width: 22px; height: 22px; background: url(../images/mail.png)no-repeat; }
+
+.div2 { transition: all .3s; display: block; padding: 15px 0; margin: 0 auto; margin-bottom: 22px; width: 180px; background-color: #0a0a0a; border-radius: 26px; text-align: center; font-family: 'Roboto', sans-serif; font-size: 18px; color: #7f7f7f; }
+.clicked { background-color: #972af4; color: #e1e1e1; }
+/* 프로필  끝 */
+
+main { float: right; padding: 50px 5.2% 0; width: 78%; background-color: #ededed; color: #0f0f0f; box-sizing: border-box; }
+main h1 { font-family: 'Montserrat', sans-serif; font-size: 120px; font-weight: 900; }
+main > p { margin: 70px 0 110px; text-align: center; font-family: 'S-CoreDream-2ExtraLight'; font-size: 54px; letter-spacing: -3px; }
+/* education 시작 */
+main section { display: flex; justify-content: space-between; max-width: 1083px; margin: 0 auto; }
+main section h2 { margin-bottom: 20px; font-family: 'S-CoreDream-6Bold'; font-size: 28px; }
+.education { padding: 40px 5%; width: 54%; background-color: #fff; border-radius: 20px; box-shadow: 8px 10px 38px rgba(0, 0, 0, 10%); box-sizing: border-box; }
+.education ul li { position: relative; padding: 0 0 0 25px; margin-bottom: 6px; font-family: 'S-CoreDream-3Light'; font-size: 18px; line-height: 1.5;}
+.education ul li::before { content: ""; float: left; position: absolute; top: 11px; left: 5px; width: 6px; height: 6px; background-color: #972af4; }
+/* education 끝 */
+
+/* license 시작 */
+.license { padding: 40px 5%; margin-left: 35px; width: 40%; background-color: #fff; border-radius: 20px; box-shadow: 8px 10px 38px rgba(0, 0, 0, 10%); box-sizing: border-box; }
+.license ul li { position: relative; padding-left: 25px; margin-bottom: 6px; font-family: 'S-CoreDream-3Light'; font-size: 18px; line-height: 1.5; }
+.license ul li::before { content: ""; float: left; position: absolute; top: 11px; left: 5px; width: 6px; height: 6px; background-color: #972af4; }
+/* license 끝*/
+
+/* skill 시작 */
+.skill { padding: 36px 7% 46px; margin: 56px auto 100px; max-width: 1083px; height: 260px; background-color: #fff; border-radius: 20px; text-align: center; box-shadow: 8px 10px 38px rgba(0, 0, 0, 10%); box-sizing: border-box; }
+.skill h2 { margin-bottom: 34px; font-family: 'S-CoreDream-6Bold'; font-size: 28px; }
+.skill ul { display: flex; justify-content: space-between; }
+.skill ul li { display: flex; width:126px; height:126px; border-radius: 50%; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 700; }
+.skill ul li .circle { display: flex; width: 122px; height: 122px; border-radius: 50%; }
+.skill ul li .circle .outcircle { display: flex; margin: auto; width: 108px; height: 108px; background-color: #fff; border-radius: 50%; }
+.skill ul li .circle .incircle { display: flex; justify-content: center; margin: auto; width: 80px; height: 80px; border-radius: 50%; align-items: center; color: #fff; }
+.skill ul li:first-child .circle, .skill ul li:first-child .incircle { background-color: #228eb4; }
+.skill ul li:nth-child(2) .circle, .skill ul li:nth-child(2) .incircle { background-color: #fd9800; }
+.skill ul li:nth-child(3) .circle, .skill ul li:nth-child(3) .incircle { background-color: #4b002f; }
+.skill ul li:nth-child(4) .circle, .skill ul li:nth-child(4) .incircle { background-color: #e54d26;}
+.skill ul li:nth-child(5) .circle, .skill ul li:nth-child(5) .incircle { background-color: #0073b5; }
+.skill ul li:last-child .circle, .skill ul li:last-child .incircle { background-color: #2e7251; }
+/* skill 끝 */
+
+/* publishing 시작 */
+.publishing { padding: 70px 0 125px; }
+.publishing .con_box { position: relative; padding: 36px 3% 35px 5.7%; margin: 0 auto; height: 727px; background-color: #fff; border-radius: 20px; box-shadow: 8px 10px 38px rgba(0, 0, 0, 10%); box-sizing: border-box; }
+.publishing h2 { color: #00c209; font-family: 'S-CoreDream-6Bold'; font-size: 32px; position: absolute; top: 62px; }
+
+.publishing .slider > div { max-width: 1147px; }
+.publishing .slider div .txt { display: inline-block; padding-top: 217px; width: 43.2%; height: 100%; font-family: 'S-CoreDream-3Light'; color: #0f0f0f; }
+.publishing .slider div .txt h3 { padding-bottom: 14px; font-family: 'S-CoreDream-6Bold'; font-size: 48px; color: #0f0f0f; }
+.publishing .slider div .txt h3 span { display: block; padding-bottom: 15px; font-family: 'S-CoreDream-2ExtraLight'; font-size: 26px; color: #bebebe; } 
+.publishing .slider div .txt ul { display: block; padding-bottom: 20px; font-size: 19px; line-height: 1.5; }
+.publishing .slider div .txt ul li {line-height: 1.6;}
+.publishing .slider div .txt ul li em { display: inline-block; width: 80px; font-family: 'S-CoreDream-6Bold'; }
+.publishing .slider div .txt p { font-size: 17px; line-height: 30px; letter-spacing: -1px; color: #0f0f0f; }
+
+.publishing .slider div { display: flex; justify-content: space-between; }
+.publishing .slider div .img { margin-left: 6.4%; width: 48%; height: 656px;}
+.publishing .slider div .img img { max-width: 100%; }
+.publishing .slider div .img a { overflow: hidden; display: block; border-radius: 15px; }
+.publishing .slider div .img a::before { content: "VIEW SITE"; opacity: 0; transition: .3s; position: absolute; width: 48%; height: 100%; color: #fff; background-color: rgba(0, 0, 0, 85%); border-radius: 15px; text-align: center; font-family: 'S-CoreDream-6Bold'; line-height: 656px; letter-spacing: 12px; color: white;  }
+.publishing .slider div .img a:hover::before { opacity: 1; }
+
+#pager { transition: all .3s; display: flex; justify-content: space-between; position: absolute; bottom: 19%; left: 15%; width: 270px;font-family: 'S-CoreDream-5Medium';}
+#pager a { cursor: pointer; transition: all .2s; padding: 15px 0; width: 125px; background-color: #f1f1f1; border-radius: 30px; text-align: center; font-size: 15px; color: #282828; }
+#pager a.publishing_next { background-color: #972af4; color: #ffffff; }
+.slick-dots { position: absolute; bottom: -80px; left: 48%; transform: translateX(-50%);  }
+.slick-dots li { float: left; margin: 0 7px; }
+.slick-dots button { list-style: none; cursor: pointer; padding: 0; width: 11px; height: 11px; background-color: #b0b0b0; border: none; border-radius: 50%; text-indent: -9999px; }
+.slick-active button { background-color: #282828; }
+
+@media (max-width: 1440px) {
+    #pager {
+        bottom: 13%;
+        left: 12%;
+    }
+}
+/* publishing 끝 */
+
+/* 갤러리 시작 */
+.design { max-width: 1240px; height: 560px; position: relative; padding: 54px 3% 0; margin: 0 auto; background-color: #fff; border-radius: 20px; box-shadow: 8px 10px 38px rgba(0, 0, 0, 10%); box-sizing: border-box; }
+.design h2 { padding: 0 0 32px 20px; color: #00c209; font-family: 'S-CoreDream-6Bold'; font-size: 32px; }
+.design .slider a { overflow: hidden; height: 340px; display: block; border-radius: 15px; }
+.design .slider img { max-width: 100%; }
+.design #pager { left: 50%; bottom: 30px; transform: translateX(-50%); width: 120px; }
+.design #pager a { display: flex; justify-content: center; align-items: center; width: 45px; height: 45px; padding: 0;}
+.design #pager a.design_next { background-color: #972af4; color: #fff; }
+.design .slick-slide { margin: 0 20px; }
+/* 갤러리 끝 */
+
+/* contact 시작 */
+.contact { margin: 180px 0 30px; }
+.contact h2 { text-align: center; font-family: 'Montserrat', sans-serif; font-size: 72px; font-weight: 900; }
+.contact ul { display: flex; justify-content: space-between; margin: 0 auto; padding-top: 60px; width: 130px; }
+.contact ul li a img { transition : transform 1.5s; }
+.contact ul li:hover a img { transform:rotate(360deg); }
+.contact p { padding-top: 140px; text-align: center; font-family: 'S-CoreDream-2ExtraLight'; font-size: 15px; letter-spacing: -1px; line-height: 1.8; }
+/* contact 끝 */
