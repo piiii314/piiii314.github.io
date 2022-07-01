@@ -39,20 +39,20 @@ a,a:visited {text-decoration: none; }
 /* 프로필 시작 */
 aside { display: flex; justify-content: center; align-items: center; position: fixed; min-width: 257px; width: 19%; height: 100vh; background-color: #0f0f0f; text-align: center; font-family: 'S-CoreDream-5Medium'; font-size: 24px; color: #e1e1e1; }
 aside .info { width: 100%; padding: 25px 0 25px; }
-aside .info ul.profile { margin: 0 auto; width: 70%; padding-bottom: 10%; }
+aside .info ul.profile { margin: 0 auto; width: 70%; padding-bottom: 8%; }
 aside .info ul.profile li span { font-family: 'S-CoreDream-4Regular'; line-height: 2.6; font-size: 16px; color: #b0b0b0;}
-aside .info ul.profile li img { max-width: 100%; margin-bottom: 32px;}
+aside .info ul.profile li img { max-width: 100%; margin-bottom: 26px;}
 aside nav {margin-bottom: 15%; }
 
 aside .info ul.contact::before { content: ""; display: block; height: 1px; background: url(../images/dashed.png); background-size: cover; }
 aside .info ul.contact { margin: 0 auto; width: 75%; font-size: 16px; text-align: left; }
 aside .info ul.contact li { position: relative; }
-aside .info ul.contact li strong { display: block; padding: 10% 0 10%; font-family: 'S-CoreDream-6Bold'; font-size: 28px; }
-aside .info ul.contact li a { display: inline-block; margin-bottom: 12px; font-family: 'S-CoreDream-4Regular'; }
+aside .info ul.contact li strong { display: block; padding: 8% 0 8%; font-family: 'S-CoreDream-6Bold'; font-size: 28px; }
+aside .info ul.contact li a { display: inline-block; margin-bottom: 12px; font-family: 'S-CoreDream-3Light'; }
 aside .info ul.contact li:last-child{ padding-left: 15%; }
 aside .info ul.contact li:last-child::before { content: ""; position: absolute; left: 0; width: 22px; height: 22px; background: url(../images/mail.png)no-repeat; }
 
-.div2 { transition: all .3s; display: block; padding: 15px 0; margin: 0 auto; margin-bottom: 22px; width: 180px; background-color: #0a0a0a; border-radius: 26px; text-align: center; font-family: 'Roboto', sans-serif; font-size: 16px; color: #7f7f7f; }
+.div2 { transition: all .3s; display: block; padding: 16px 0; margin: 0 auto; margin-bottom: 22px; width: 160px; background-color: #0f0f0f; border-radius: 26px; text-align: center; font-family: 'Roboto', sans-serif; font-size: 16px; color: #7f7f7f; }
 .clicked { background-color: #972af4; color: #e1e1e1; }
 /* 프로필  끝 */
 
@@ -112,7 +112,7 @@ main section h2 { margin-bottom: 20px; font-family: 'S-CoreDream-6Bold'; font-si
 .publishing .slider div .img a:hover::before { opacity: 1; }
 
 #pager { transition: all .3s; display: flex; justify-content: space-between; position: absolute; bottom: 19%; left: 15%; width: 270px;font-family: 'S-CoreDream-5Medium';}
-#pager a { cursor: pointer; transition: all .2s; padding: 15px 0; width: 125px; background-color: #f1f1f1; border-radius: 30px; text-align: center; font-size: 15px; color: #282828; }
+#pager a { cursor: pointer; transition: all .2s; padding: 15px 0; width: 125px; background-color: #f1f1f1; border-radius: 30px; text-align: center; font-size: 15px; color: #0f0f0f; }
 #pager a.publishing_next { background-color: #972af4; color: #ffffff; }
 .slick-dots { position: absolute; bottom: -80px; left: 48%; transform: translateX(-50%);  }
 .slick-dots li { float: left; margin: 0 7px; }
