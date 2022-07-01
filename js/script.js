@@ -43,7 +43,7 @@ init();
 
 AOS.init();
 
-$('.profile a').click(function(e){
+$('nav a').click(function(e){
   $.scrollTo(this.hash || 0, 500/* 속도 */);
   e.preventDefault(); 
 });
