@@ -23,24 +23,6 @@ $('.design .slider').slick({
   slidesToScroll: 1,
 });
 
-
-var div2 = document.getElementsByClassName("div2");
-function handleClick(event) {
-  if (event. target.classList[1] === "clicked") {
-      event.target.classList.remove("clicked");
-  } else {
-      for (var i = 0; i < div2.length; i++) {
-          div2[i].classList.remove("clicked");
-      }
-      event. target.classList.add("clicked");
-      }   
-  }
-  function init() { for (var i = 0; i <div2.length; i++) {
-      div2[i].addEventListener("click", handleClick);
-      }
-  }
-init();
-
 AOS.init();
 
 $('nav a').click(function(e){
@@ -50,3 +32,42 @@ $('nav a').click(function(e){
 
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear(); 
+
+$(function(){ var lastScroll = 0; $(window).scroll(function(event){
+  var scroll = $(this).scrollTop();
+  if (scroll < 1000){
+    $("nav .about").addClass("clicked");}
+  else {
+    $("nav .about").removeClass("clicked");} 
+  if (scroll > 1000 && scroll < 2200){
+    $("nav .portfolio").addClass("clicked");}
+  else {
+    $("nav .portfolio").removeClass("clicked");} 
+    if (scroll > 2200){
+      $("nav .contactMe").addClass("clicked");}
+    else {
+      $("nav .contactMe").removeClass("clicked");} 
+      lastScroll = scroll;});
+    });
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  btn.value = '전송 중...';
+
+  const serviceID = 'gmail';
+  const templateID = 'template_gdlsbns';
+
+  emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = '전송 완료';
+      alert('전송 완료!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});

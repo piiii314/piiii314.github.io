@@ -22,15 +22,6 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <!-- 구글 -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <style>
-        .fancybox-slide--iframe .fancybox-content {
-            width: 800px;
-            height: 600px;
-            max-width: 80%;
-            max-height: 80%;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
     <aside>
@@ -38,13 +29,13 @@
             <ul class="profile">
                 <li><img src="images/profile.png" alt="프로필"></li>
                 <li>서 원주</li>
-                <li><span>1997 . 06 . 16</span></li>
+                <li><span>대한민국 부산</span></li>
             </ul>
             <nav>
                 <ul>
-                    <li><a href="#about" class="div2">About</a></li>
-                    <li><a href="#portfolio" class="div2">Portfolio</a></li>
-                    <li><a href="#contact" class="div2">Contact</a></li>
+                    <li><a href="#about" class="about">About</a></li>
+                    <li><a href="#portfolio" class="portfolio">Portfolio</a></li>
+                    <li><a href="#contactMe" class="contactMe">Contact</a></li>
                 </ul>
             </nav>
             </ul>
@@ -125,7 +116,7 @@
             </ul>
         </article>
         
-        <article class="publishing" id="portfolio">
+        <article class="publishing" id="portfolio" data-aos="fade-up">
             <div class="con_box">
                     <h2>PUBLISHING</h2>
                 <div class="slider">
@@ -177,7 +168,7 @@
                                 <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
                                 <li><em>제작기간</em>3 days</li>
                             </ul>
-                            <p>기존사이트의 정보를 유지하고 트렌드에 맞춰 새롭게 리뉴얼 디자인 한 랜딩페이지 입니다.</p>
+                            <p>nicescroll 플러그인을 이용해 가로 스크롤로 디자인한 랜딩페이지 입니다.</p>
                         </div>
                         <div class="img">
                             <a href="too_cool_for_school/index.html" target="blank"><img src="images/view_4.jpg" alt="투쿨포스쿨 리뉴얼 사이트 바로가기"></a>
@@ -185,15 +176,14 @@
                     </div>
                     <div>
                         <div class="txt">
-                            <h3><span># 05</span>반스</h3>
+                            <h3><span># 05</span>스타벅스 클론코딩</h3>
                             <ul>
-                                <li><em>기여도</em>디자인 100% + 퍼블리싱 100%</li>
-                                <li><em>제작기간</em>2 days</li>
+                                <li><em>제작기간</em>1 days</li>
                             </ul>
-                            <p>주 색감인 모노톤을 중심으로 타이포와 라인을 이용해 반스의 캐주얼하고 스트릿한 브랜드 개성을 직관적으로 느낄 수 있도록 디자인 한 랜딩페이지 입니다.</p>
+                            <p>패스트캠퍼스 프론트엔드 과정에서 진행한 클론코딩 사이트입니다. HTML5, CSS3, JS, 라이브러리를 이용해 스크롤 액션, 검색창 활성화, 호버 애니메이션, 슬라이드, 호버 메뉴를 구현하였습니다. </p>
                         </div>
                         <div class="img">
-                            <a href="vans/index.html" target="blank"><img src="images/view_5.jpg" alt="반스 리뉴얼 사이트 바로가기"></a>
+                            <a href="https://marvelous-kitten-6636ff.netlify.app/" target="blank"><img src="images/view_5.jpg" alt="스타벅스 클론코딩 사이트 바로가기"></a>
                         </div>
                     </div>
                 </div>
@@ -204,7 +194,7 @@
             </div>
         </article>
 
-        <article class="design">
+        <article class="design" data-aos="fade-up">
             <h2>DESIGN</h2>
             <div class="slider">
                 <div>
@@ -229,12 +219,47 @@
             </div>
         </article>
 
-        <article class="contact" id="contact">
-            <h2 data-aos="flip-left">THANK YOU !</h2>
-            <ul>
-                <li><a href="mailto:seowonj314@gmail.com"><img src="images/sns-m.png" alt="seowonj314@gmail.com"></a></li>
-                <li><a href="javascript:void(0)"><img src="images/sns-g.png" alt="깃허브 바로가기"></a></li>
-            </ul>
+        <article class="contact" id="contactMe">
+            <h2 data-aos="flip-left" data-aos-delay="300">Contact Me<i>!</i></h2>
+            <form id="form">
+                <div class="from">
+                    <div class="field">
+                        <label for="user_name">이름</label>
+                        <input type="text" name="user_name" id="user_name">
+                    </div>
+                    <div class="field">
+                        <label for="user_email">이메일</label>
+                        <input type="text" name="user_email" id="user_email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="from_title">제목</label>
+                    <input type="text" name="from_title" id="from_title">
+                </div>
+                <div class="field">
+                    <label for="message">내용</label>
+                    <input type="text" name="message" id="message" class="message">
+                </div>
+
+                <input type="submit" id="button" value="전송" class="send">
+            </form>
+            
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" ></script>
+            
+            <script type="text/javascript">
+                emailjs.init('2PiXe8cm9HfDuIkW6')
+            </script>
+            <div class="rollingH ani">
+                <div class="rolling_box">
+                    <div class="aniText">
+                        Thank you for reviewing my portfolio
+                    </div>
+                    <div class="aniText">
+                        Thank you for reviewing my portfolio
+                    </div>
+                </div>
+            </div>
             <p>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다. <br>
                 &copy; SeoWonju portfolio <span class="this-year"></span></p>
         </article>
