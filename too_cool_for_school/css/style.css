@@ -8,8 +8,8 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'S-CoreDream-6Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-family: 'S-CoreDream-4Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,8 +20,8 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'S-CoreDream-2ExtraLight';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-family: 'S-CoreDream-6Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,23 +38,14 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     overflow: hidden;
     position: absolute;
 }
-
 .menu {
     position: fixed; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90%;
-    padding: 40px;
+    height: 94%;
+    padding: 30px;
     z-index: 50;
-}
-.menu ul.left_menu {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px;
 }
 .menu .bottom_menu {
     display: flex;
@@ -84,7 +75,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     width: 80%;
     position: fixed;
     left: 16.5%;
-    top: 40px;
+    top: 30px;
     z-index: 50;
     display: flex;
     justify-content: space-between;
@@ -92,9 +83,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
 }
 #nav .gnb ul li {
     font-family: 'Roboto', sans-serif; 
-    font-style: italic; 
-    font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     cursor: pointer;
 }
 #nav .gnb ul {
@@ -124,7 +113,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     width: 1450px;
     justify-content: space-between;
     align-items: center;
-    margin: 90px 0 0 360px;
+    margin: 90px 0 0 260px;
 }
 .main .main_con .txt {
     width: 580px;
@@ -139,7 +128,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
 }
 .main .main_con .txt h1 {
     height: 170px;
-    font-family: 'S-CoreDream-2ExtraLight';
+    font-family: 'S-CoreDream-3Light';
     font-size: 64px;
     color: #272727;
     line-height: 85px;
@@ -189,7 +178,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     margin-bottom: 16px;
 }
 .new .new_item ul li h2{
-    font-family: 'S-CoreDream-3Light';
+    font-family: 'S-CoreDream-4Regular';
     font-size: 14px;
     margin: 13px 0 10px;
 }
@@ -298,7 +287,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     margin-top: 25px;
 }
 .brand_slider > div > p strong {
-    font-family: 'S-CoreDream-2ExtraLight';
+    font-family: 'S-CoreDream-3Light';
     font-size: 26px;
     line-height: 40px;
     color: #272727;
@@ -327,8 +316,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     margin-bottom: 16px;
 }
 .brand_slider > div > ul li h2{
-    font-family: 'S-CoreDream-3Light';
-    font-size: 14px;
+    font-family: 'S-CoreDream-4Regular';
     margin: 13px 0 10px;
 }
 .brand_slider > div > ul li strong {
@@ -384,11 +372,10 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
 }
 .best_seller ul li {
     font-family: 'S-CoreDream-5Medium';
-    font-size: 16px;
     margin-bottom: 16px;
 }
 .best_seller ul li h2{
-    font-family: 'S-CoreDream-3Light';
+    font-family: 'S-CoreDream-4Regular';
     font-size: 14px;
     margin: 13px 0 10px;
 }
@@ -431,15 +418,19 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     width: 465px;
     display: flex;
     justify-content: space-between;
-    font-family: 'S-CoreDream-3Light';
+    font-family: 'S-CoreDream-4Regular';
     font-size: 15px;
 }
 .notice p strong {
     width: 357px;
     text-align: left;
 }
-.notice > a {
-    font-family: 'S-CoreDream-5Medium';
+.notice .more {
+    font-family: 'Roboto', sans-serif; 
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 15px; 
+    background-color: #0c0c0c;
     font-size: 16px;
 }
 
@@ -467,7 +458,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     vertical-align: middle;
 }
 .info .service ul li p {
-    font-family: 'S-CoreDream-3Light';
+    font-family: 'S-CoreDream-4Regular';
     font-size: 14px;
     color: #7e7e7e;
     line-height: 20px;
@@ -477,7 +468,7 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     font-size: 20px;
     margin-left: 10px;
 }
-.info .serbice_more {
+.info .service .more {
     border-bottom: 1px solid #dcdedb;
     font-family: 'S-CoreDream-5Medium';
     font-size: 18px;
@@ -487,10 +478,10 @@ a, a:visited {color: #0c0c0c; text-decoration: none;}
     width: 1050px;
     display: flex;
     justify-content: space-between;
-    font-family: 'S-CoreDream-2ExtraLight';
+    font-family: 'S-CoreDream-3Light';
     font-size: 14px;
     color: #bebebe;
-    line-height: 20px;
+    line-height: 1.7;
     margin-top: 100px;
 }
 .info .footer p:last-child {
